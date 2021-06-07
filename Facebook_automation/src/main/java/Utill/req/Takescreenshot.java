@@ -7,7 +7,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Takescreenshot {
 
-	/*
+
 	public void Takescreenshot() {
 		
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -15,5 +15,5 @@ public class Takescreenshot {
 		
 	}
 	
-*/	
+
 }

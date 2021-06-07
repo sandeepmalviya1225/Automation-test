@@ -17,13 +17,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import Utill.req.XlsReader;
 
 public class Facebook_base {
-
-	
 		public static WebDriver driver;
 		public static Properties prop;
 		public static XlsReader reader;
 		public static String UserName;
 		public static String Password;
+		
+		
 		public Facebook_base()
 		{
 			
@@ -40,8 +40,7 @@ public class Facebook_base {
 				}
 				}	
 		
-	
-		
+
 		public static void Openbrowser() throws IOException {
 		
 			String browserName = prop.getProperty("browser");
@@ -56,14 +55,8 @@ public class Facebook_base {
 	    	  
 	    	   driver.manage().timeouts().implicitlyWait(Utill.req.Utill.imptime, TimeUnit.SECONDS);
 	    	    
-	    	   driver.get(prop.getProperty("URl"));
-			}
-			
-		
-			
-			}  
-
-		public static void Useexclefiel() {
+	    	   driver.get(prop.getProperty("URL"));
+	
 			
 			reader = new XlsReader("D:\\sandeep\\Devoint_selenium\\.metadata\\Facebook_automation\\src\\main\\java\\Datafile\\facebookfile.xlsx");
 			
@@ -73,5 +66,5 @@ public class Facebook_base {
 		}		
 		}
 
-	
+}
 

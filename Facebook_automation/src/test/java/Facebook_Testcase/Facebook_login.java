@@ -12,14 +12,12 @@ import Facebook_automation.Facebook_automation.Facebook_home;
 import Facebook_automation.Facebook_automation.Login_Facebook;
 
 
-
-public class Facebook_longin extends Facebook_base {
+public class Facebook_login extends Facebook_base {
 	Login_Facebook fblog;
 	Facebook_home homepage;
-	public Facebook_longin() {
+	public Facebook_login() {
 		super();
 	} 
-
 	
 	@BeforeTest
 
@@ -27,19 +25,17 @@ public class Facebook_longin extends Facebook_base {
 		Facebook_base.Openbrowser();
 		
 		}
-
-@Test(priority=1)
+	
+@Test
 public void lonintoapptest() throws IOException {
 	homepage = fblog.loginto("Facebook_base.UserName", "Facebook_base.Password");
 	
 }
 
-@Test(priority=2)
+@Test
 public void logintitletest() {
 	String titel = fblog.validateTitle();
 	Assert.assertEquals(titel, "Facebook" );
 }
-
-
 
 }

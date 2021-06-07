@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Facebook_Testcase.Facebook_longin"/>
+       <class name="Facebook_Testcase.Facebook_Post"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
